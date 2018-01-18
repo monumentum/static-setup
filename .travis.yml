@@ -1,13 +1,16 @@
 language: node_js
+node_js:
+- '7'
 install:
-  - npm install
+- npm install
 script:
-  - npm run build
+- npm run build
 deploy:
-  provider: pages
-  skip-cleanup: true
-  github-token:
-    secure: pAnaUenr/TNux0rH0KMjIJoZ5usI4sFUq8zgi8DQMXjInntT0aGAtoARmN9EmN/ml7hN4tWMOv4etSQ/HCaOlZaip5hLdYcPmta/DNdvrCGyQvZgd7m4Cn4rp4XFOwikQSCDXBt9bNcfPqW0qHu0SlogG70BCHCwthSDRWm+i17pcvpG/YJB1ydxt6+M7pV2psQ2eO+BF4sU9JRSpE4WxbefKhR9MOmh3z0836lbSEb2DLmv+y59VQHY1q1A+qvMOqiG5ijs50yeX5NFW3vbaPI3TfrRlQwsmUs0sRHg9uIM+Xkgd54CK4JgFWSoZyGhIB832Mth9CyjtJ+3Inj06pmprhbnV66bt6JKdiew3H7aUzKunDX96j+oRchk8d2qhbhWbd9f3XjUNfvSOXESx8IkVNOf6MAm56V1qs7c/12CRyipOmg6I+rORZWIbhW+XZBoUtEHfaPk2VfzFdmwqzCCa+YvQgMs6UqcvVXIL0fCLWoGf4raeiHMyDe5kYrgzh5/msYAffX+ZkxH7qvf32WqErCbI5lQ6IVyi/yhfXVRcdbTEnYGGXUKNKKX3u45VV8iZn4pktRxRmu+TPX4BBRznbaocZpXdHAgCsLng901XjYBM3hwxiY+EzZRHC9lnnUUwjh+drpxLWe7J3pCRn87D81OdWuVuAZtzOeIeMc=
-  keep-history: true
+  provider: surge
+  domain: monumentum.surge.sh
+  project: ./dist
   on:
     branch: master
+env:
+  global:
+    secure: O8AgXu3+QBEjvf6Z5aQf0DIc6Ot2FIllWB8/5QihFUM2xfFY7Axp/FaljEDOJSfrVLCmA0Sj67ZS2Z7DIO33eWIlA0ss0A+WE/TkFU8OGMGMdmx9Z1SCbyX5t2brUj1AuQmK7LYtzGmN1oCdzUrJ8Kb294yxa9uCBKXHdhF9qtaJVxsa1UORnthrWXaKpowS3TvxF+j7EpnpTkJxnzyzBL48xG38lmZ1Du+uL/E3nxlndFTYx690jf+gwA9lvascDIX1P9soFcOUPFfwvbt1ILLiMYZokoqDy7cVQdnqR/h/URkSSqhYmc/zSzX9oUhkCK+kWnY2/kvNVISnfjaCID4CSGEyijeyiOUTsF0KOULYdrcHVzSnvL6kEorpP/cVHy2jNAKCuWNsEAfiuEFptW6/smK50R2EMIkFpWloGG8JnNhVb0L3ojwBDzmdTqN99OZVn18vZuXKDJKhIu/JS6ObZ9+R27MnoitQ/9BJkpmIPYIdg0tdnQJYBKltksXA4vipZNhn/d+ze3JBGJ2zqyrgLdSxdvdBX807HAvwcP067T1qU5qEvqUG/I5lfxU4n2WH0AwefC4ajyCG9hfHb0P7J6edWxsvzPcoc21WOkPZ7TQBcc0vYSvKo2GFgTEwUSBmIW/L6X97ZQIFm1dC2rpTtd6dWGuAoCtHHxgkm3g=

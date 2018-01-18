@@ -1,12 +1,14 @@
 const gulpStatic = require('gulp-static-gen');
 const data = require('./src/languages');
 
+const DEFAULT_LANG = 'en';
+
 const templateInfo = lang => ({
     data: data[lang],
     input: './src/templates/index.hbs',
     output: {
         dir: './dist',
-        name: `index-${lang}.html`,
+        name: `index${DEFAULT_LANG === lang ? "" : "-" + lang}.html`,
     }
 });
 
