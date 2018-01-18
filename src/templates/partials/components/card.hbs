@@ -1,0 +1,13 @@
+<div class="card">
+    {{#if url}}
+        <a href="{{ url }}">
+    {{/if}}
+        {{#if image}}
+            <img src="{{ image }}" alt="{{ title }}">
+        {{/if}}
+        <h3> {{ title }} </h3>
+        <p> {{{ text }}} </p>
+    {{#if url}}
+        </a>
+    {{/if}}
+</div>

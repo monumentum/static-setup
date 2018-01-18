@@ -19,10 +19,7 @@ gulpStatic({
     hbs: {
         batch : ['./src/templates/partials'],
         watch : './src/templates/**/*',
-        multiple: [
-            templateInfo('en'),
-            templateInfo('pt-br'),
-        ]
+        multiple: Object.keys(data).map(templateInfo)
     },
     img: {
         input: './src/images/**/*',

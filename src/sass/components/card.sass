@@ -1,0 +1,23 @@
+.card-list
+    max-width: 1280px
+    min-width: 350px
+    width: 90%
+    margin: 0 auto
+
+    &:after
+        content: " "
+        clear: both
+        display: block
+
+    .card
+        box-sizing: border-box
+        padding: 5px 15px
+        width: 100%
+
+        a
+            text-decoration: none
+
+        @media screen and (min-width: 768px)
+            width: 32.33%
+            margin: 20px 0.5%
+            float: left

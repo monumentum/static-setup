@@ -1,0 +1,32 @@
+.social-projects
+    background: #18202a
+    position: relative
+    color: #ecf0f1
+
+    .container, .card-list
+        z-index: 2
+        position: relative
+
+    .card-list > .card
+        border: 1px solid #ecf0f1
+        border-radius: 5px
+
+        & > a
+            color: #ecf0f1
+
+        &:hover
+            box-shadow: 0 0 10px rgba(236, 240, 241, 0.2)
+
+    &:after
+        content: " "
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        opacity: 0.2
+        background: url('/assets/images/santa-claus.jpg') center center no-repeat
+        background-attachment: fixed
+        background-size: cover
+        filter: gray
+        z-index: 1

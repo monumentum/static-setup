@@ -1,37 +1,69 @@
 {
     "meta": {
-        "lang": "en"
+        "lang": "en",
+        "title": "Monumentum - Building more than software to next generations",
+        "keywords": "",
+        "description": ""
     },
     "about": {
         "title": "We are Monumentum!",
         "text": "In latin the word Monumentum means Monument that means something built to be remembered and commemorated. And that's exactlly what we want to do, build more than software to the next generations"
     },
-    "howWeWork": [
-        {
-            "image": "",
-            "title": "Brief",
-            "text": "We schedule a 1 hour meeting to get the customer brief and understand the problem."
-        },
-        {
-            "image": "",
-            "title": "Purpose",
-            "text": "In 2 hours we reply with a <proposta> talking about costs and delivery time. At least we designate how many money we will spend to charity and the customer could <sugerir> the entity that will receive it"
-        },
-        {
-            "image": "",
-            "title": "Happiness was created to be Shared <3",
-            "text": "We will develop your dream as ours, and will delivery with the best quality that we can! At least we will movement the money to the choosen entity"
-        }
-    ],
+    "howWeWork": {
+        "title": "How we work!",
+        "cards": [
+            {
+                "image": "",
+                "title": "The Brief",
+                "text": "We schedule an one hour meeting to get the customer brief and understand your dream."
+            },
+            {
+                "image": "",
+                "title": "The Purpose",
+                "text": "In few hours we will analyze your case and give you a time and money estimation."
+            },
+            {
+                "image": "",
+                "title": "The Dream",
+                "text": "In the end you get your dream and a part of the payment will be redirected to social projects."
+            }
+        ]
+    },
     "openSource": {
         "title": "From DEVs to DEVs",
-        "text": "We trully believe that people is bigger than any kind of technology, and here we try to abstract all that we think necessary and good to reuse as micro-libraries, and all of it is opensource for anyone use and contribute",
+        "text": "We have three solid rocks behind Monumentum: People > Technology, Live is short to live for yourself and If could be Generic Will Be Generic! That's the reason why we share many of our libraries to help another developers life!",
         "call": "See some of our mainly projects:",
-        "projects": []
+        "cards": [
+            {
+                "title": "astronode",
+                "text": "An easy way to up nodejs apis based on ORM models",
+                "url": "https://github.com/monumentum/astronode"
+            },
+            {
+                "title": "gulp-static-gen",
+                "text": "Pre defined gulp configurations to up you static site",
+                "url": "https://github.com/monumentum/gulp-static-gen"
+            },
+            {
+                "title": "obsidian",
+                "text": "Generic Redux util to optmize the creation of reducers",
+                "url": "https://github.com/monumentum/obsidian"
+            }
+        ]
     },
     "socialProjects": {
-        "title": "Social Projects",
-        "text": "",
-        "projects": []
+        "title": "Happiness only exists if you share",
+        "text": "Part of our money will be DIRECTLY redirected to social causes during negociations, at least Monumentum spend some of you own money/resources maintaining and support social projects!",
+        "cards": [
+            {
+                "title": "Ajude Um Pet",
+                "text": "It's a Brazilian project to help homeless animals found a home.",
+                "url": "https://github.com/opensanca/catchiorrineo"
+            },{
+                "title": "Mão Aberta",
+                "text": "It's another Brailizian project to help NGOs found help.",
+                "url": "https://github.com/opensanca/maoaberta"
+            }
+        ]
     }
 }

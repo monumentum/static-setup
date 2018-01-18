@@ -1,15 +1,18 @@
 <!DOCTYPE html>
-<html lang="{{meta.lang}}">
+<html lang="{{ meta.lang }}">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>@monumentum - {{ hero.pos }}</title>
+    <title>{{ meta.title }}</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Nothing+You+Could+Do" rel="stylesheet">
     <link rel="stylesheet" href="/assets/css/index.css">
 </head>
 <body>
     {{> sections/hero }}
     {{> sections/about }}
+    {{> sections/base name="how-we-work" container=howWeWork }}
+    {{> sections/base name="social-projects" container=socialProjects }}
+    {{> sections/base name="open-source" container=openSource }}
 </body>
 </html>

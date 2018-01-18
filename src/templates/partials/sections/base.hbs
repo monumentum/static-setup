@@ -1,0 +1,7 @@
+<section class="section {{ name }}">
+    <div class="container">
+        <h2>{{ container.title }}</h2>
+        <p> {{ container.text }} <b>{{ container.call }}</b></p>
+    </div>
+    {{> components/card-list list=container.cards }}
+</section>
